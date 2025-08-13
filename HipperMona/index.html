@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Developer - Premium Portfolio</title>
+    <meta name="description" content="Creative Developer specializing in immersive web experiences with cutting-edge animations">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader">
+            <div class="morphing-shape"></div>
+            <div class="loading-text">
+                <span>Loading</span>
+                <div class="loading-dots">
+                    <span>.</span>
+                    <span>.</span>
+                    <span>.</span>
+                </div>
+            </div>
+            <div class="loading-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+        <div class="cursor-inner"></div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" aria-label="Toggle theme">
+        <div class="toggle-track">
+            <div class="toggle-thumb">
+                <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20">
+                    <circle cx="12" cy="12" r="5"/>
+                    <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </g>
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+                </svg>
+            </div>
+        </div>
+    </button>
+
+    <!-- Floating Navigation -->
+    <nav class="floating-nav" aria-label="Section navigation">
+        <ul class="nav-dots">
+            <li><a href="#hero" class="nav-dot active" data-section="hero"><span class="sr-only">Hero</span></a></li>
+            <li><a href="#about" class="nav-dot" data-section="about"><span class="sr-only">About</span></a></li>
+            <li><a href="#skills" class="nav-dot" data-section="skills"><span class="sr-only">Skills</span></a></li>
+            <li><a href="#projects" class="nav-dot" data-section="projects"><span class="sr-only">Projects</span></a></li>
+            <li><a href="#testimonials" class="nav-dot" data-section="testimonials"><span class="sr-only">Testimonials</span></a></li>
+            <li><a href="#contact" class="nav-dot" data-section="contact"><span class="sr-only">Contact</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress">
+        <div class="progress-ring">
+            <svg width="60" height="60">
+                <circle cx="30" cy="30" r="25" class="progress-circle-bg"></circle>
+                <circle cx="30" cy="30" r="25" class="progress-circle"></circle>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particles" class="particles"></canvas>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <div class="hero-background">
+                <div class="gradient-mesh"></div>
+                <div class="floating-elements">
+                    <div class="floating-shape shape-1"></div>
+                    <div class="floating-shape shape-2"></div>
+                    <div class="floating-shape shape-3"></div>
+                </div>
+            </div>
+            <div class="hero-content container">
+                <h1 class="hero-title">
+                    <span class="typewriter-text" data-text="Creative Developer"></span>
+                </h1>
+                <p class="hero-subtitle reveal-text">Crafting digital experiences with code & creativity</p>
+                <p class="hero-description reveal-text">I blend technical expertise with artistic vision to create memorable digital experiences.</p>
+                <div class="hero-actions">
+                    <button class="btn btn--primary magnetic-btn">View My Work</button>
+                    <button class="btn btn--outline magnetic-btn">Contact Me</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about section">
+            <div class="section-divider">
+                <svg viewBox="0 0 1200 120" class="wave">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28C240.2,69.86,314,33.31,391.29,42.87,438.29,48.67,491.71,63.57,538.71,57.77c47-5.8,103.59-32.17,158-28C759.5,34.31,833.3,70.86,910.59,61.3c47-5.8,100.2-22.2,158-28V0Z"/>
+                </svg>
+            </div>
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-visual">
+                        <div class="morphing-portrait">
+                            <div class="portrait-shape"></div>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <h2 class="section-title reveal-text">About Me</h2>
+                        <p class="reveal-text">Passionate full-stack developer with 5+ years of experience in creating exceptional web experiences. I specialize in modern JavaScript frameworks, creative animations, and user-centered design.</p>
+                        <div class="stats-grid">
+                            <div class="stat-item" data-target="5">
+                                <span class="stat-number">0</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item" data-target="50">
+                                <span class="stat-number">0</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-item" data-target="30">
+                                <span class="stat-number">0</span>
+                                <span class="stat-label">Happy Clients</span>
+                            </div>
+                            <div class="stat-item" data-target="10000">
+                                <span class="stat-number">0</span>
+                                <span class="stat-label">Lines of Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title reveal-text">Skills & Expertise</h2>
+                <div class="skills-filter">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="Frontend">Frontend</button>
+                    <button class="filter-btn" data-category="Backend">Backend</button>
+                    <button class="filter-btn" data-category="Animation">Animation</button>
+                    <button class="filter-btn" data-category="Database">Database</button>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item" data-category="Frontend" data-level="95">
+                        <div class="skill-bubble">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-progress">
+                                <div class="progress-ring">
+                                    <svg width="80" height="80">
+                                        <circle cx="40" cy="40" r="30" class="progress-circle-bg"></circle>
+                                        <circle cx="40" cy="40" r="30" class="progress-circle" data-progress="95"></circle>
+                                    </svg>
+                                    <span class="progress-text">95%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="Frontend" data-level="90">
+                        <div class="skill-bubble">
+                            <span class="skill-name">React</span>
+                            <div class="skill-progress">
+                                <div class="progress-ring">
+                                    <svg width="80" height="80">
+                                        <circle cx="40" cy="40" r="30" class="progress-circle-bg"></circle>
+                                        <circle cx="40" cy="40" r="30" class="progress-circle" data-progress="90"></circle>
+                                    </svg>
+                                    <span class="progress-text">90%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="Backend" data-level="85">
+                        <div class="skill-bubble">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-progress">
+                                <div class="progress-ring">
+                                    <svg width="80" height="80">
+                                        <circle cx="40" cy="40" r="30" class="progress-circle-bg"></circle>
+                                        <circle cx="40" cy="40" r="30" class="progress-circle" data-progress="85"></circle>
+                                    </svg>
+                                    <span class="progress-text">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="Frontend" data-level="95">
+                        <div class="skill-bubble">
+                            <span class="skill-name">CSS/SCSS</span>
+                            <div class="skill-progress">
+                                <div class="progress-ring">
+                                    <svg width="80" height="80">
+                                        <circle cx="40" cy="40" r="30" class="progress-circle-bg"></circle>
+                                        <circle cx="40" cy="40" r="30" class="progress-circle" data-progress="95"></circle>
+                                    </svg>
+                                    <span class="progress-text">95%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="Animation" data-level="80">
+                        <div class="skill-bubble">
+                            <span class="skill-name">Three.js</span>
+                            <div class="skill-progress">
+                                <div class="progress-ring">
+                                    <svg width="80" height="80">
+                                        <circle cx="40" cy="40" r="30" class="progress-circle-bg"></circle>
+                                        <circle cx="40" cy="40" r="30" class="progress-circle" data-progress="80"></circle>
+                                    </svg>
+                                    <span class="progress-text">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="Animation" data-level="85">
+                        <div class="skill-bubble">
+                            <span class="skill-name">GSAP</span>
+                            <div class="skill-progress">
+                                <div class="progress-ring">
+                                    <svg width="80" height="80">
+                                        <circle cx="40" cy="40" r="30" class="progress-circle-bg"></circle>
+                                        <circle cx="40" cy="40" r="30" class="progress-circle" data-progress="85"></circle>
+                                    </svg>
+                                    <span class="progress-text">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="Backend" data-level="75">
+                        <div class="skill-bubble">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-progress">
+                                <div class="progress-ring">
+                                    <svg width="80" height="80">
+                                        <circle cx="40" cy="40" r="30" class="progress-circle-bg"></circle>
+                                        <circle cx="40" cy="40" r="30" class="progress-circle" data-progress="75"></circle>
+                                    </svg>
+                                    <span class="progress-text">75%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="Database" data-level="80">
+                        <div class="skill-bubble">
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-progress">
+                                <div class="progress-ring">
+                                    <svg width="80" height="80">
+                                        <circle cx="40" cy="40" r="30" class="progress-circle-bg"></circle>
+                                        <circle cx="40" cy="40" r="30" class="progress-circle" data-progress="80"></circle>
+                                    </svg>
+                                    <span class="progress-text">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title reveal-text">Featured Projects</h2>
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="Web App">Web App</button>
+                    <button class="filter-btn" data-category="Portfolio">Portfolio</button>
+                    <button class="filter-btn" data-category="Mobile">Mobile</button>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="Web App">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="https://via.placeholder.com/400x300/08D9D6/FFFFFF?text=E-commerce" alt="E-commerce Platform" loading="lazy">
+                                <div class="project-overlay">
+                                    <h3>E-commerce Platform</h3>
+                                    <p>Web App</p>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <h3>E-commerce Platform</h3>
+                                <p>Modern e-commerce solution with advanced animations and seamless UX</p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">GSAP</span>
+                                </div>
+                                <button class="btn btn--primary">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="Portfolio">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="https://via.placeholder.com/400x300/A855F7/FFFFFF?text=Portfolio" alt="Portfolio Website" loading="lazy">
+                                <div class="project-overlay">
+                                    <h3>Portfolio Website</h3>
+                                    <p>Portfolio</p>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Portfolio Website</h3>
+                                <p>Creative portfolio with 3D elements and immersive animations</p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Three.js</span>
+                                    <span class="tech-tag">GSAP</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                                <button class="btn btn--primary">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="Mobile">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="https://via.placeholder.com/400x300/00FF9D/FFFFFF?text=Mobile+App" alt="Mobile App UI" loading="lazy">
+                                <div class="project-overlay">
+                                    <h3>Mobile App UI</h3>
+                                    <p>Mobile</p>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Mobile App UI</h3>
+                                <p>Beautiful mobile interface with smooth micro-interactions</p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">React Native</span>
+                                    <span class="tech-tag">Framer Motion</span>
+                                    <span class="tech-tag">TypeScript</span>
+                                </div>
+                                <button class="btn btn--primary">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials section">
+            <div class="container">
+                <h2 class="section-title reveal-text">What Clients Say</h2>
+                <div class="testimonials-cube">
+                    <div class="cube-container">
+                        <div class="testimonial-cube">
+                            <div class="cube-face active" data-testimonial="0">
+                                <div class="testimonial-content">
+                                    <div class="stars">
+                                        <span class="star active">★</span>
+                                        <span class="star active">★</span>
+                                        <span class="star active">★</span>
+                                        <span class="star active">★</span>
+                                        <span class="star active">★</span>
+                                    </div>
+                                    <p>"Exceptional work! The animations and attention to detail exceeded our expectations."</p>
+                                    <div class="testimonial-author">
+                                        <strong>Sarah Johnson</strong>
+                                        <span>CEO, TechCorp</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cube-face" data-testimonial="1">
+                                <div class="testimonial-content">
+                                    <div class="stars">
+                                        <span class="star active">★</span>
+                                        <span class="star active">★</span>
+                                        <span class="star active">★</span>
+                                        <span class="star active">★</span>
+                                        <span class="star active">★</span>
+                                    </div>
+                                    <p>"Professional, creative, and delivered exactly what we envisioned. Highly recommended!"</p>
+                                    <div class="testimonial-author">
+                                        <strong>Mike Chen</strong>
+                                        <span>Product Manager, InnovateLabs</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cube-face" data-testimonial="2">
+                                <div class="testimonial-content">
+                                    <div class="stars">
+                                        <span class="star active">★</span>
+                                        <span class="star active">★</span>
+                                        <span class="star active">★</span>
+                                        <span class="star active">★</span>
+                                        <span class="star active">★</span>
+                                    </div>
+                                    <p>"Amazing technical skills combined with great design sense. Will work with again!"</p>
+                                    <div class="testimonial-author">
+                                        <strong>Emma Davis</strong>
+                                        <span>Creative Director, DesignStudio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cube-controls">
+                        <button class="cube-btn active" data-face="0"></button>
+                        <button class="cube-btn" data-face="1"></button>
+                        <button class="cube-btn" data-face="2"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title reveal-text">Let's Create Something Amazing</h2>
+                <p class="section-subtitle reveal-text">Ready to bring your vision to life?</p>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">✉</span>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:hello@creativedeveloper.com">hello@creativedeveloper.com</a>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com" target="_blank" class="social-link" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="currentColor" d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <div class="form-field">
+                                <input type="text" id="name" name="name" class="form-control" required>
+                                <label for="name" class="form-label">Your Name</label>
+                                <div class="field-border"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-field">
+                                <input type="email" id="email" name="email" class="form-control" required>
+                                <label for="email" class="form-label">Email Address</label>
+                                <div class="field-border"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-field">
+                                <input type="text" id="subject" name="subject" class="form-control" required>
+                                <label for="subject" class="form-label">Subject</label>
+                                <div class="field-border"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-field">
+                                <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                                <label for="message" class="form-label">Your Message</label>
+                                <div class="field-border"></div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width magnetic-btn">
+                            <span class="btn-text">Send Message</span>
+                            <div class="btn-ripple"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="confetti-container"></div>
+        </section>
+    </main>
+
+    <!-- Success Modal -->
+    <div class="modal hidden" id="success-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="success-animation">
+                <div class="checkmark">
+                    <svg viewBox="0 0 52 52">
+                        <circle cx="26" cy="26" r="25" fill="none"/>
+                        <path fill="none" d="m14 27 6 6 16-16"/>
+                    </svg>
+                </div>
+            </div>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for reaching out. I'll get back to you soon.</p>
+            <button class="btn btn--primary" id="close-modal">Close</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
